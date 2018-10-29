@@ -29,8 +29,8 @@ class Test_for_random_pairing < Minitest::Test
     pairs = student_sample(["Sam", "Steven", "Tracey", "Billyjack", "Garry", "Josh", "Scott", "Josh"])
     assert_equal(4, pairs.count)
   end
-  def test_for_4_pairs_w_extras
-    pairs = student_sample(["Sam", "Steven", "Tracey", "Billyjack", "Garry", "Josh", "Scott", "Josh", "Ricky"])
-    assert_equal(4, pairs.count)
+  def test_for_6_pairs
+    pairs = student_sample(["Sam", "Steven", "Tracey", "Billyjack", "Garry", "Josh", "Scott", "Josh", "Ricky", "Sally", "Kelly", "Hank"])
+    assert_equal(6, pairs.count)
   end
 end
