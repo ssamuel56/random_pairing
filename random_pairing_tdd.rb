@@ -5,6 +5,10 @@ class Test_for_random_pairing < Minitest::Test
   def test_1for1
     assert_equal(1,1)
   end
+  def test_for_only_one
+    pairs = student_sample(["Samuel"])
+    assert_equal(1, pairs.count)
+  end
   def test_for_first_pair
     pairs = student_sample(["Sam", "Steven"])
     assert_equal(1, pairs.count)

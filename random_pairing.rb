@@ -6,9 +6,12 @@ def student_sample(students)
     if x.length == 2
       ary << x
     else
-      ary[rand(ary.length)].concat(x)
+      if ary.empty?
+        ary << x
+      else
+        ary[rand(ary.length)].concat(x)
+      end
     end
   end
-  p ary
   return ary
 end
